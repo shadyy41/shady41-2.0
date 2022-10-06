@@ -20,11 +20,11 @@ const Sidebar=({dir})=>{
     },
     {
       url: 'https://www.linkedin.com/in/abhinavanand41/',
-      logo: 'LI'
+      logo: 'IN'
     },
   ]
   return (
-    <div className={`font-ibm-mono hidden h-screen md:flex flex-col justify-end items-start fixed ${dir ? 'left-16' : 'right-16'} after:content-[''] after:bg-blue-100/75 after:w-px after:h-36 after:bottom-0 after:right-0 after:absolute after:-z-10`}>
+    <aside className={`font-ibm-mono hidden h-screen md:flex flex-col justify-end items-start fixed ${dir ? 'left-16' : 'right-16'} after:content-[''] after:bg-blue-100/75 after:w-px after:h-36 after:bottom-0 after:right-0 after:absolute after:-z-10`}>
       {dir ? 
       // w-fit after:opacity-0 after:content-[''] after:bg-blue-600/75 after:w-full after:h-0 after:absolute after:bottom-1 after:left-2 after:-z-10 hover:after:opacity-100 hover:after:h-3 after:transition-all relative h-full focus:outline-none focus:after:opacity-100 focus:after:h-3 focus:text-blue-100 hover:text-blue-100
       <nav className="flex flex-col absolute bottom-56 right-0 -left-2 text-sm gap-5">
@@ -40,7 +40,7 @@ const Sidebar=({dir})=>{
         </a>
       </Link>
         }
-    </div>
+    </aside>
   )
 }
 

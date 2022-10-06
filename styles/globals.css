@@ -13,5 +13,28 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 9999px;
-  background: #dbe9fe;
+  background: #dbe9fec6;
+}
+
+.showcase-banner img{
+  filter: opacity(0.5) drop-shadow(0 0 0 #0066fe);
+  transition: filter 100ms ease-in-out;
+}
+.showcase-banner:hover img{
+  cursor: pointer;
+  filter: none;
+}
+.showcase-banner:hover::after{
+  opacity: 0;
+}
+.showcase-banner:after{
+  cursor: pointer;
+  content: attr(url-attr);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 100ms ease-in-out;
 }
