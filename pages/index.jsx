@@ -1,7 +1,6 @@
 import About from "../components/About"
 import Projects from "../components/Projects"
 import Divider from "../components/Divider"
-import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 export default function Home() {
   return (
@@ -10,7 +9,6 @@ export default function Home() {
       <Divider/>
       <Projects/>
       <Divider/>
-      <Contact/>
       <Divider/>
       <Footer/>
     </main>

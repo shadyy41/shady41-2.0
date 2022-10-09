@@ -1,5 +1,5 @@
 import Link from "next/link"
-const Sidebar=({dir})=>{
+const Sidebar = ({dir}) => {
   const email = "abhinavjha2512@gmail.com"
   const socials = [
     {

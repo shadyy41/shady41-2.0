@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-export default function ProjectShowcase({data, id}) {
+
+const ProjectShowcase = ({data, id}) => {
   return (
     <section className="w-full h-fit flex flex-col lg:flex-row items-center justify-center font-ibm-mono gap-4 lg:gap-8 text-blue-200">
       <aside className={`w-full lg:w-5/12 h-fit lg:aspect-[16/10] text-blue-200 ${id%2==0 ? "lg:text-right lg:items-end" : "lg:text-left lg:items-start"} flex flex-col justify-center gap-2 ${id%2==0 ? "lg:order-last" : "lg:order-0"}`}>
@@ -24,3 +25,5 @@ export default function ProjectShowcase({data, id}) {
     </section>
   )
 }
+
+export default ProjectShowcase

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
-export const Navbar=()=>{
+
+const Navbar = () => {
   const links = ['About', 'Projects', 'Contact']
 
   const [modal, setModal] = useState(false)
