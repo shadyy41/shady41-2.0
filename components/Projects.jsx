@@ -29,7 +29,7 @@ const Projects = () => {
     },
   ]
   return (
-    <div className="flex flex-col h-fit w-full md:w-12/13 items-start justify-start font-ibm-mono text-blue-100 mb-12 lg:mb-24" id="Projects">
+    <div className="flex flex-col h-fit w-full md:w-12/13 items-start justify-start text-blue-100 mb-12 lg:mb-24" id="Projects">
       <SectionHeader text="Featured Projects"/>
       <section className="flex flex-col gap-8 lg:gap-20">
         {projects.map((e, i)=>{

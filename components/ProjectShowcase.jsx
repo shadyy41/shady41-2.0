@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const ProjectShowcase = ({data, id}) => {
   return (
-    <section className="w-full h-fit flex flex-col lg:flex-row items-center justify-center font-ibm-mono gap-4 lg:gap-8 text-blue-200">
+    <section className="w-full h-fit flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 text-blue-200">
       <aside className={`w-full lg:w-5/12 h-fit lg:aspect-[16/10] text-blue-200 ${id%2==0 ? "lg:text-right lg:items-end" : "lg:text-left lg:items-start"} flex flex-col justify-center gap-2 ${id%2==0 ? "lg:order-last" : "lg:order-0"}`}>
         <Link href={`https://${data.url}`} passHref>
           <a target="_blank" rel="noopener noreferrer" className={`w-fit text-2xl font-medium after:content-[''] after:bg-blue-600/75 after:w-full after:h-3 after:absolute after:bottom-0 after:left-0 px-1 after:-z-10 hover:after:h-full after:transition-all relative focus:outline-none focus:after:h-3 focus:text-blue-100 hover:text-blue-100`}>{data.name}</a>
