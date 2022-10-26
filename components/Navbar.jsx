@@ -1,5 +1,6 @@
-import Link from "next/link"
-import { useEffect, useState } from "react"
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { v4 as uuid } from 'uuid'
 
 const Navbar = () => {
   const links = ['About', 'Projects', 'Contact']
@@ -12,7 +13,7 @@ const Navbar = () => {
     if(modal){
       document.body.style.overflow = 'hidden'
     }
-    else document.body.style.overflow = 'unset'
+    else document.body.style.overflow = 'overlay'
   }, [modal])
 
   return (
@@ -28,15 +29,13 @@ const Navbar = () => {
         <button onClick={toggleModal} className="md:hidden w-fit after:opacity-0 after:content-[''] after:bg-blue-600/75 after:w-full after:h-0 after:absolute after:bottom-7 after:left-2 after:-z-10 hover:after:opacity-100 hover:after:h-3 after:transition-all relative h-full focus:outline-none focus:after:opacity-100 focus:after:h-3 focus:text-blue-100 hover:text-blue-100">
           Menu
         </button>
-        <div className="hidden md:flex items-center justify-end w-full h-full flex-wrap gap-5">
+        <div className="hidden md:flex items-center justify-end w-full flex-wrap gap-5">
           {links.map((link, i)=>{
-            return (<Link href={`#${link}`} key={i} passHref>
-              <a className="after:opacity-0 after:content-[''] after:bg-blue-600/75 after:w-full after:h-0 after:absolute after:bottom-7 after:left-2 after:-z-10 hover:after:opacity-100 hover:after:h-3 after:transition-all relative h-full focus:outline-none focus:after:opacity-100 focus:after:h-3 focus:text-blue-100 hover:text-blue-100">
+            return (<a href={`#${link}`} key={uuid()} className="link-underline">
                 <span className="h-full flex items-center">
                   <span className="mr-1 text-blue-500 font-medium">0{i+1}. </span>{link}
                 </span>
-              </a>
-            </Link>)
+              </a>)
           })}
         </div>
       </nav>
@@ -46,13 +45,11 @@ const Navbar = () => {
             Close
           </button>
           {links.map((link, i)=>{
-            return (<Link href={`#${link}`} key={i}>
-              <a className="w-fit after:opacity-0 after:content-[''] after:bg-blue-600/75 after:w-full after:h-0 after:absolute after:bottom-1 after:left-2 after:-z-10 hover:after:opacity-100 hover:after:h-3 after:transition-all relative h-full focus:outline-none focus:after:opacity-100 focus:after:h-3 focus:text-blue-100 hover:text-blue-100">
+            return (<a href={`#${link}`} key={uuid()} className="w-fit after:opacity-0 after:content-[''] after:bg-blue-600/75 after:w-full after:h-0 after:absolute after:bottom-1 after:left-2 after:-z-10 hover:after:opacity-100 hover:after:h-3 after:transition-all relative h-full focus:outline-none focus:after:opacity-100 focus:after:h-3 focus:text-blue-100 hover:text-blue-100">
                 <span className="h-full flex items-center">
                   <span className="mr-1 text-blue-500 font-medium">0{i+1}. </span>{link}
                 </span>
-              </a>
-            </Link>)
+              </a>)
           })}
         </nav>
       </dialog>}

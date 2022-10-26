@@ -1,15 +1,15 @@
 import About from "../components/About"
 import Projects from "../components/Projects"
-import Divider from "../components/Divider"
 import Footer from "../components/Footer"
 import Contact from "../components/Contact"
 
 const Home = () => {
   return (
-    <main className="flex w-full flex-col md:px-28 bg-[url('/mob-back.svg')] md:bg-[url('/back.svg')] bg-contain bg-no-repeat mt-20">
+    <main className="flex w-full flex-col md:px-28 gap-0 md:gap-14">
       <About/>
-      <Divider/>
       <Projects/>
+      <Contact/>
+      <Footer/>
     </main>
   )
 }
