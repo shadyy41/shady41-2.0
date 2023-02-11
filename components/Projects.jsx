@@ -23,6 +23,26 @@ const Projects = () => {
       }, ],
     },
     {
+      name: 'TicTacToe',
+      description: 'Online TicTacToe app which supports Auth using JWT. Users can start a game with other users using their email ids. Finished games are stored in MongoDB database.',
+      banner: 'https://i.imgur.com/H2Eh8bL.png',
+      url: 'tictactoe41.vercel.app',
+      gh: 'https://github.com/shadyy41/tic-tac-toe',
+      tech: [{
+        name: "Next.js",
+        url: "https://nextjs.org/"
+      }, {
+        name: "Socket.IO",
+        url: "https://socket.io/"
+      }, {
+        name: "Express.js",
+        url: "https://expressjs.com/"
+      }, {
+        name: "MongoDB",
+        url: "https://www.mongodb.com/"
+      }, ],
+    },
+    {
       name: 'Breeze',
       description: 'Breeze is a music player app similar to Spotify Web, users can perform CRUD operations on playlists, perform a regex based search for songs and artists.',
       banner: 'https://i.imgur.com/7SVifXq.png',
