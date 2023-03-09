@@ -18,18 +18,6 @@ display: block;
     justify-content: center;
     align-items: center;
 }
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: none;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 9999px;
-  background: #bddbfe;
-}
 .loader {
  --clr: #0066fe;
  /* color of spining  */
