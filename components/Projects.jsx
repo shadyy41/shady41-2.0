@@ -104,7 +104,7 @@ const Projects = () => {
           </section>
         })}
         <div className="w-full flex items-center justify-center"> 
-          <button className="text-blue-200 text-xl md:text-lg link-underline after:left-0" onClick={handleMore}>{maxLen!==projects.length ? 'View more' : 'View less'}</button>  
+          <button className="text-blue-200 text-lg md:text-md link-underline after:left-0" onClick={handleMore}>{maxLen!==projects.length ? 'View more' : 'View less'}</button>  
         </div>
       </section>
     </div>
