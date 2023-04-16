@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { v4 as uuid } from 'uuid'
 
-const ProjectShowcase = ({data, id}) => {
+const ProjectShowcase = ({data, id, imageProps}) => {
   return (
     <section className="w-full h-fit flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8">
       <aside className={`w-full lg:w-5/12 h-fit lg:aspect-[16/10] ${id%2==0 ? "lg:text-right lg:items-end" : "lg:text-left lg:items-start"} flex flex-col justify-center gap-2 ${id%2==0 ? "lg:order-last" : "lg:order-0"}`}>
@@ -33,7 +33,7 @@ const ProjectShowcase = ({data, id}) => {
       </aside>
       <Link href={`https://${data.url}`} passHref>
         <a target="_blank" rel="noopener noreferrer" className={`relative aspect-[16/10] w-full lg:w-7/12 cursor-pointer showcase-banner rounded-md overflow-hidden text-lg`} url-attr={data.url}>
-          <Image src={data.banner} layout='fill' priority alt='Project screenshot'/>
+          <Image src={data.banner} layout='fill' priority alt='Project screenshot' onLoad={()=>console.log("Yes we loaded")} placeholder='blur'/>
         </a>
       </Link>
     </section>

@@ -3,12 +3,17 @@ import SectionHeader from './SectionHeader'
 import Divider from './Divider'
 import { v4 as uuid } from 'uuid'
 import { useState } from 'react'
+import codeShack from "../public/codeshack.png"
+import breeze from "../public/breeze.png"
+import snippetShare from "../public/snippetshare.png"
+import ticTacToe from "../public/tictactoe.png"
+
 
 const projects=[
   {
     name: 'CodeShack',
     description: 'CodeShack is a WebRTC based collaborative coding app which also supports peer-to-peer video calling.',
-    banner: 'https://i.imgur.com/d3zABwU.png',
+    banner: codeShack,
     url: 'codeshack.vercel.app',
     gh: 'https://github.com/shadyy41/codeshack',
     tech: [{
@@ -25,7 +30,7 @@ const projects=[
   {
     name: 'Breeze',
     description: 'Breeze is a music player app similar to Spotify Web, users can perform CRUD operations on playlists, perform a regex based search for songs and artists.',
-    banner: 'https://i.imgur.com/7SVifXq.png',
+    banner: breeze,
     url: 'breeze41.vercel.app',
     gh: 'https://github.com/shadyy41/Breeze',
     tech: [{
@@ -42,7 +47,7 @@ const projects=[
   {
     name: 'TicTacToe',
     description: 'Online TicTacToe app which supports Auth using JWT. Users can start a game with other users using their email ids. Finished games are stored in MongoDB database.',
-    banner: 'https://i.imgur.com/H2Eh8bL.png',
+    banner: ticTacToe,
     url: 'tictactoe41.vercel.app',
     gh: 'https://github.com/shadyy41/tic-tac-toe',
     tech: [{
@@ -62,7 +67,7 @@ const projects=[
   {
     name: 'SnippetShare',
     description: 'SnippetShare is a web app that allows users to create, save, share code snippets. The code editor supports 6 languages.',
-    banner: 'https://i.imgur.com/heSSF3r.png',
+    banner: snippetShare,
     url: 'snippetshare41.herokuapp.com',
     tech: [{
       name: "Express.js",
