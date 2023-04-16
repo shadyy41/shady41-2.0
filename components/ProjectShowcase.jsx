@@ -26,7 +26,7 @@ const ProjectShowcase = ({data, id}) => {
           {data.gh ? <p>&bull;</p> : ''}
           {data.gh ? <Link href={data.gh} passHref>
             <a target="_blank" rel="noopener noreferrer" className="link-underline">
-              View Repo
+              View repo
             </a>
           </Link> : ""}
         </section>
