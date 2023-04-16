@@ -33,7 +33,7 @@ const ProjectShowcase = ({data, id, imageProps}) => {
       </aside>
       <Link href={`https://${data.url}`} passHref>
         <a target="_blank" rel="noopener noreferrer" className={`relative aspect-[16/10] w-full lg:w-7/12 cursor-pointer showcase-banner rounded-md overflow-hidden text-lg`} url-attr={data.url}>
-          <Image src={data.banner} layout='fill' priority alt='Project screenshot' onLoad={()=>console.log("Yes we loaded")} placeholder='blur'/>
+          <Image src={data.banner} layout='fill' priority alt='Project screenshot' placeholder='blur'/>
         </a>
       </Link>
     </section>
