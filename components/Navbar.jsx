@@ -33,7 +33,7 @@ const Navbar = () => {
           {links.map((link, i)=>{
             return (<a href={`#${link}`} key={uuid()} className="link-underline">
                 <span className="h-full flex items-center">
-                  <span className="mr-1 text-blue-500 font-medium">0{i+1}. </span>{link}
+                  <span className="mr-1 text-blue-500 font-medium drop-shadow-lg">0{i+1}. </span>{link}
                 </span>
               </a>)
           })}
